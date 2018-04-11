@@ -10,11 +10,11 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "4fec664dbd11426bbf4abb3f58fabe91";
+char auth[] = " ";
 
 // Your GPRS credentials
 // Leave empty, if missing user or pass
-char apn[]  = "airtelgprs.com"; //APN of your service provider
+char apn[]  = " "; //APN of your service provider
 char user[] = " ";
 char pass[] = "";
 
@@ -150,7 +150,7 @@ void loop()
      }
 
      if(MQGetGasPercentage(MQRead(MQ_PIN)/Ro,GAS_CO)>=100){
-     Blynk.email("rakeshbs580@gmail.com", "ESP8266 Alert", "Vechicle execeeded standard CO level please service your vehicle");
+     Blynk.email("abishek.vaithylingam@gmail.com", "ESP8266 Alert", "Vechicle execeeded standard CO level please service your vehicle");
      //Blynk.notify("Temperature Increased over limit");
      digitalWrite(buzzer, HIGH);
      }
